@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  padding-left: 5%;
+  overflow-x: scroll;
+}
+
+.col-price {
+  width: 15%;
+}
+
+.col-product {
+  width: 70%;
+  font-weight: bold;
+}
+
+.col-quantity {
+  width: 15%;
+  font-size: 14px
+}
+
+.basket-total {
+  text-align: right;
+  padding-right: 5%
+}

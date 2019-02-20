@@ -1,0 +1,17 @@
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+  max-width: 80%
+}
+
+.basketView {
+  display: block;
+  position: fixed;
+  top: 2vh;
+  right: 2vw;
+  width: 20vw;
+  height: 30vh;
+  background-color: beige
+}

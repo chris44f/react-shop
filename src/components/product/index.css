@@ -1,0 +1,15 @@
+.product {
+  border: 1px solid blue;
+  display:block;
+  width:15vw;
+  min-width: 250px;
+  min-height: 300px;
+  height:25vh;
+  margin: 2vh 2vw;
+  text-align: center;
+  line-height: 1vh
+}
+
+.product img {
+  width: 50%
+}
