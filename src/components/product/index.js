@@ -7,7 +7,11 @@ const Product = ({ productId, productName, productPrice, productImage, handleAdd
     <img src={productImage} />
     <h4>{productName}</h4>
     <h5>{"£" + productPrice}</h5>
-    <button onClick={()=>handleAddProduct(productName,productPrice,productId)}>Add to Basket</button>
+    <div className="basket-add-container">
+      <h5>Quantity</h5>
+      <input className="quantityInput" type="number"/>
+      <button onClick={()=>handleAddProduct(productName,productPrice,productId)}>Add to Basket</button>
+    </div>
   </div>
 )
 }

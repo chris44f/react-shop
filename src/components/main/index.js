@@ -54,6 +54,8 @@ class Main extends Component {
     basket: []
   }
 
+handleRemoveProduct = () => (console.log("working"))
+
 handleAddProduct = (name,price,id) => {
   let stateBasket = [...this.state.basket]
   if (stateBasket.some((item) => item.basketProductId === id)){
@@ -88,7 +90,8 @@ handleAddProduct = (name,price,id) => {
         </div>
         <div className="basketView">
           <Basket
-            basket={this.state.basket}/>
+            basket={this.state.basket}
+            handleRemoveProduct={this.handleRemoveProduct}/>
         </div>
       </div>
     )

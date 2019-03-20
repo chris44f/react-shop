@@ -13,3 +13,23 @@
 .product img {
   width: 50%
 }
+
+.basket-add-container {
+  display:flex;
+  height: 7%;
+  width: 100%
+}
+
+.basket-add-container h5 {
+  width: 40%;
+  padding-left: 5%;
+  height: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-weight: normal;
+}
+
+.quantityInput {
+  width: 10%;
+  margin-right: 5%
+}

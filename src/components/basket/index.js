@@ -9,6 +9,7 @@ class Basket extends Component {
         <td className="col-quantity">{item.basketProductQuantity + "x "}</td>
         <td className="col-product">{item.basketProductName}</td>
         <td className="col-price">{"£" + item.basketProductPrice}</td>
+        <td className="col-remove"><button onClick={()=>this.props.handleRemoveProduct()}>x</button></td>
       </tr>
     ))
   )
