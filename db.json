@@ -1,0 +1,38 @@
+[
+  {
+    "productId": 10001,
+    "productName": "T-shirt",
+    "productPrice": 9,
+    "productImage": "TshirtImage"
+  },
+  {
+    "productId": 10002,
+    "productName": "Jumper",
+    "productPrice": 40,
+    "productImage": "JumperImage"
+  },
+  {
+    "productId": 10003,
+    "productName": "Striped T-shirt",
+    "productPrice": 14,
+    "productImage": "StripeImage"
+  },
+  {
+    "productId": 10004,
+    "productName": "Hoodie",
+    "productPrice": 30,
+    "productImage": "HoodyImage"
+  },
+  {
+    "productId": 10005,
+    "productName": "Jeans",
+    "productPrice": 45,
+    "productImage": "JeansImage"
+  },
+  {
+    "productId": 10006,
+    "productName": "Woolly Hat",
+    "productPrice": 6,
+    "productImage": "WoollyImage"
+  },
+]

@@ -54,7 +54,19 @@ class Main extends Component {
     basket: []
   }
 
-handleRemoveProduct = () => (console.log("working"))
+handleRemoveProduct = (id,price) => {
+  let stateBasket = [...this.state.basket]
+  let productToRemove = stateBasket.filter((item)=>item.basketProductId===id)
+  let productRemovePrice = productToRemove[0].basketProductPrice / productToRemove[0].basketProductQuantity
+  if (productToRemove[0].basketProductQuantity >1) {
+    productToRemove[0].basketProductQuantity = productToRemove[0].basketProductQuantity -1
+    productToRemove[0].basketProductPrice = productToRemove[0].basketProductPrice - productRemovePrice
+    this.setState({productToRemove})
+  } else {
+    let productsRemaining = stateBasket.filter((item)=>item.basketProductId !== id)
+    this.setState({ basket: productsRemaining})
+  }
+}
 
 handleAddProduct = (name,price,id) => {
   let stateBasket = [...this.state.basket]
