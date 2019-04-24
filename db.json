@@ -1,38 +1,38 @@
 [
   {
-    "productId": 10001,
-    "productName": "T-shirt",
-    "productPrice": 9,
-    "productImage": "TshirtImage"
+    "productId":10001,
+    "productName":"T-shirt",
+    "productPrice":9,
+    "productImage":"/static/media/Blue_Tshirt.774f2e17.jpg"
   },
   {
-    "productId": 10002,
-    "productName": "Jumper",
-    "productPrice": 40,
-    "productImage": "JumperImage"
+    "productId":10002,
+    "productName":"Jumper",
+    "productPrice":40,
+    "productImage":"/static/media/jumper.ee48124d.JPG"
   },
   {
-    "productId": 10003,
-    "productName": "Striped T-shirt",
-    "productPrice": 14,
-    "productImage": "StripeImage"
+    "productId":10003,
+    "productName":"Striped T-shirt",
+    "productPrice":14,
+    "productImage":"/static/media/stripes.59d6fb5d.jpg"
   },
   {
-    "productId": 10004,
-    "productName": "Hoodie",
-    "productPrice": 30,
-    "productImage": "HoodyImage"
+    "productId":10004,
+    "productName":"Hoodie",
+    "productPrice":30,
+    "productImage":"/static/media/Hoodie_self.c132c43d.JPG"
   },
   {
-    "productId": 10005,
-    "productName": "Jeans",
-    "productPrice": 45,
-    "productImage": "JeansImage"
+    "productId":10005,
+    "productName":"Jeans",
+    "productPrice":45,
+    "productImage":"/static/media/Jeans_for_men.2a0fbc26.jpg"
   },
   {
-    "productId": 10006,
-    "productName": "Woolly Hat",
-    "productPrice": 6,
-    "productImage": "WoollyImage"
-  },
+    "productId":10006,
+    "productName":"Woolly Hat",
+    "productPrice":6,
+    "productImage":"/static/media/woollyhat.e176e423.JPG"
+  }
 ]

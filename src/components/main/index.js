@@ -87,6 +87,7 @@ handleAddProduct = (name,price,id) => {
   }
 }
   render() {
+
     return (
       <div>
         <div className="productsGrid">
