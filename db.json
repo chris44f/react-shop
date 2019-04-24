@@ -1,4 +1,5 @@
-[
+{
+  "basket": [
   {
     "productId":10001,
     "productName":"T-shirt",
@@ -36,3 +37,4 @@
     "productImage":"/static/media/woollyhat.e176e423.JPG"
   }
 ]
+}
