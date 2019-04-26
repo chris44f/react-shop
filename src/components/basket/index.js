@@ -25,7 +25,7 @@ class Basket extends Component {
   render(){
 
     return(
-      <div>
+      <div className="basketWrapper">
         <h4>Items in your basket</h4>
         {this.props.basket.length>0 ? `You have ${this.basketQuantity(this.props.basket)} items in your basket.` : "You have nothing in your basket!"}
         <table>

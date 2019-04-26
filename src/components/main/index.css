@@ -3,15 +3,27 @@
   flex-wrap: wrap;
   overflow: scroll;
   justify-content: center;
-  max-width: 80%
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.basketView {
-  display: block;
-  position: fixed;
-  top: 2vh;
-  right: 2vw;
+.navbar {
+  width: 100vw;
+}
+
+#sale {
+  color: red;
+}
+
+.navbar li {
+  display: inline-block;
+  background-color: #cdcdcd;
+  color: #00008b;
+  margin-left: auto;
+  margin-right: auto;
   width: 20vw;
-  height: 30vh;
-  background-color: beige
+  border: none;
+  text-align: center;
+  line-height: 40px;
 }

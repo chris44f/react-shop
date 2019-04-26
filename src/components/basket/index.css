@@ -1,3 +1,14 @@
+.basketWrapper {
+  display:block;
+  position: absolute;
+  z-index: 1;
+  background-color: #ffffff;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 2px 2px 2px 2px #00008b
+}
+
 table {
   width: 100%;
   padding-left: 5%;
