@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import './index.css';
 import Product from '../product'
 import Basket from '../basket'
-import JumperImage from '../jumper.JPG'
-import WoollyImage from '../woollyhat.JPG'
-import JeansImage from '../Jeans_for_men.jpg'
-import StripeImage from '../stripes.jpg'
-import HoodyImage from '../Hoodie_self.JPG'
-import TshirtImage from '../Blue_Tshirt.jpg'
-import ShortsImage from '../shorts.jpg'
+import JumperImage from '../sweater.jpg'
+import HatImage from '../hat.jpg'
+import JeansImage from '../jeans.jpg'
+import PatternedTImage from '../patternedtee.jpg'
+import HoodyImage from '../hoody.jpg'
+import TshirtImage from '../tshirt.jpg'
+import ShortsImage from '../short.jpg'
 import SocksImage from '../socks.jpg'
 import isEqual from 'lodash.isequal'
 
@@ -27,9 +27,9 @@ const products = [
   },
   {
     productId: 10003,
-    productName: "Striped T-shirt",
+    productName: "Patterned T-shirt",
     productPrice: 14,
-    productImage: StripeImage
+    productImage: PatternedTImage
   },
   {
     productId: 10004,
@@ -45,9 +45,9 @@ const products = [
   },
   {
     productId: 10006,
-    productName: "Woolly Hat",
+    productName: "Hat",
     productPrice: 6,
-    productImage: WoollyImage
+    productImage: HatImage
   },
   {
     productId: 10007,
@@ -70,7 +70,7 @@ class Main extends Component {
     latestQuantity: undefined,
     basketDisplayed: false,
   }
-// NOTE: this section regarding session storage isnt quite right - won't allow empty basket!! Speak to Rich
+
   componentDidMount = () => {
     this.updateStateWithStorage()
   }
@@ -80,10 +80,11 @@ class Main extends Component {
     }
 
   updateStateWithStorage = () => {
+    if(sessionStorage.getItem("savedBasket")){
     let value = sessionStorage.getItem("savedBasket")
       value = JSON.parse(value)
       this.setState({ basket: value})
-  }
+  }}
 
   saveToSession = () => {
     let sessionBasket = [...this.state.basket]
