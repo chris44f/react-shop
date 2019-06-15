@@ -10,55 +10,54 @@ import HoodyImage from '../hoody.jpg'
 import TshirtImage from '../tshirt.jpg'
 import ShortsImage from '../short.jpg'
 import SocksImage from '../socks.jpg'
-import isEqual from 'lodash.isequal'
 
 const products = [
   {
     productId: 10001,
     productName: "T-shirt",
-    productPrice: 9,
+    productPrice: 14,
     productImage: TshirtImage
   },
   {
     productId: 10002,
     productName: "Jumper",
-    productPrice: 40,
+    productPrice: 30,
     productImage: JumperImage
   },
   {
     productId: 10003,
     productName: "Patterned T-shirt",
-    productPrice: 14,
+    productPrice: 16,
     productImage: PatternedTImage
   },
   {
     productId: 10004,
     productName: "Hoodie",
-    productPrice: 30,
+    productPrice: 40,
     productImage: HoodyImage
   },
   {
     productId: 10005,
     productName: "Jeans",
-    productPrice: 45,
+    productPrice: 60,
     productImage: JeansImage
   },
   {
     productId: 10006,
     productName: "Hat",
-    productPrice: 6,
+    productPrice: 14,
     productImage: HatImage
   },
   {
     productId: 10007,
     productName: "Shorts",
-    productPrice: 7,
+    productPrice: 20,
     productImage: ShortsImage
   },
   {
     productId: 10008,
     productName: "Socks",
-    productPrice: 8,
+    productPrice: 17,
     productImage: SocksImage
   },
 ]
@@ -171,7 +170,7 @@ class Main extends Component {
               handleRemoveProduct={this.handleRemoveProduct}/>
           }</li>
         </ul>
-        <div className="productsGrid">
+        <div className="products-grid">
           {products.map((product)=>(
             <Product
               productId={product.productId}

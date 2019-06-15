@@ -1,7 +1,7 @@
-.productsGrid {
+.products-grid {
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
+  overflow: visible;
   justify-content: center;
   max-width: 90%;
   margin-left: auto;
@@ -10,6 +10,7 @@
 
 .navbar {
   width: 100vw;
+  padding-left: 0;
 }
 
 #sale {
