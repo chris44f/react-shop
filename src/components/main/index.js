@@ -44,19 +44,19 @@ const products = [
   },
   {
     productId: 10006,
-    productName: "Hat",
+    productName: "Straw Hat",
     productPrice: 14,
     productImage: HatImage
   },
   {
     productId: 10007,
-    productName: "Shorts",
+    productName: "Chino Shorts",
     productPrice: 20,
     productImage: ShortsImage
   },
   {
     productId: 10008,
-    productName: "Socks",
+    productName: "Striped Socks",
     productPrice: 17,
     productImage: SocksImage
   },
@@ -155,21 +155,26 @@ class Main extends Component {
 
     return (
       <div>
+      <div className="header-wrapper">
+        <div className="logo-container">
+          <p id="the">the</p><p id="store">store</p>
+        </div>
         <ul className="navbar">
-          <li>New Arrivals</li>
-          <li>All Men</li>
-          <li>All Women</li>
-          <li id="sale">Sale</li>
+          <li>new</li>
+          <li>men</li>
+          <li>women</li>
+          <li id="sale">sale</li>
           <li
             onMouseEnter={()=>this.displayBasket()}
             onMouseLeave={()=>this.displayBasket()}
-          >Basket ({this.state.basket.reduce((total, item) => total + item.basketProductQuantity, 0)})
+          >basket ({this.state.basket.reduce((total, item) => total + item.basketProductQuantity, 0)})
           { this.state.basketDisplayed &&
             <Basket
               basket={this.state.basket}
               handleRemoveProduct={this.handleRemoveProduct}/>
           }</li>
         </ul>
+      </div>
         <div className="products-grid">
           {products.map((product)=>(
             <Product

@@ -6,11 +6,16 @@
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  top: 19vh;
+  z-index: -1;
 }
 
 .navbar {
   width: 100vw;
   padding-left: 0;
+  top: 9vh;
+  margin-top: 0
 }
 
 #sale {
@@ -27,4 +32,31 @@
   border: none;
   text-align: center;
   line-height: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.logo-container {
+  color: #808080;
+  text-align: center;
+  padding-block-start: 2vh;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 10vh;
+  min-height: 60px;
+}
+
+#the {
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: inline
+}
+
+#store {
+  font-size: 3em;
+  display: inline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.header-wrapper {
+  position: fixed;
 }
